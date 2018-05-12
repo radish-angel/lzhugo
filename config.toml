@@ -1,25 +1,36 @@
-# baseurl = "https://example.com/"
-title = "SiteTitle"
-theme = "hugo_theme_robust"
+baseurl = "http://localhost"
+title = "LzBlog"
+canonifyurls = true
+paginate = 10
+theme = "startbootstrap-clean-blog"
+copyright = "Code released under the Apache 2.0 license."
+# googleAnalytics = "UA-123-45" # delete or comment to disable Google Analytics JS generation
+# disqusShortname = "YourDisqusShortname" #delete or comment to disable Disqus comments
 
-googleAnalytics = "UA-XXXXXXXX-XX" # Optional
-disqusShortname = "XYW"
+[author]
+  name = "Benoît Benedetti"
 
 [params]
-  description = "This is site description"
-  dateformat = "Jan 2, 2006" # Optional
-  # Fonts settings.
-  googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
-  fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
-  logofontfamily = "Lobster, cursive" # Optional, Override logo font.
+  DateForm = "Mon, Jan 2, 2006"
+  Description = "美丽智慧的女人"
+  Author = "Miss Liu"
+  email = "1204920733@qq.com" #Remove this line if you would prefer not to use an email button in the footer.
+  postSummariesFrontPage = 4 #Number of post summaries to show on front page, comment out to allow default(4)
+  showReadTime = true #set to false to exclude read time from header of post
 
-[params.author]
-  thumbnail = "images/author.jpg"
-  name = "John Doe"
-  description = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
-  facebook = "https://www.facebook.com/daisuke.tsuji.735"
-  twitter = "https://twitter.com/dim0627"
-  github = "https://github.com/dim0627"
+# [[params.social]]
+#  title = "github"
+#  url = "https://www.facebook.com/FACEBOOKHANDLE"
 
-[outputs]
-page = [ "HTML", "AMP" ] # if you want AMP enable.
+[[menu.main]]
+  name = "主页"
+  url = "/"
+  weight = -200
+[[menu.main]]
+  name = "文章"
+  url = "/post/"
+  weight = -180
+[[menu.main]]
+  name = "关于我"
+  url = "/about/"
+  weight = -160
