@@ -1,4 +1,4 @@
-baseurl = "http://localhost"
+baseurl = "https://1314zi.com"
 title = "LzBlog"
 canonifyurls = true
 paginate = 10
